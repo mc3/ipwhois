@@ -298,9 +298,11 @@ class IPASN:
         Deprecated. This will be removed in a future release.
         """
 
+        """
         from warnings import warn
         warn('IPASN._parse_fields_whois() has been deprecated and will be '
              'removed. You should now use IPASN.parse_fields_whois().')
+        """
         return self.parse_fields_whois(*args, **kwargs)
 
     def parse_fields_http(self, response, extra_org_map=None):
