@@ -173,10 +173,11 @@ class IPASN:
         """
         Deprecated. This will be removed in a future release.
         """
-
+        """
         from warnings import warn
         warn('IPASN._parse_fields_dns() has been deprecated and will be '
              'removed. You should now use IPASN.parse_fields_dns().')
+        """
         return self.parse_fields_dns(*args, **kwargs)
 
     def parse_fields_verbose_dns(self, response):
@@ -405,9 +406,11 @@ class IPASN:
         Deprecated. This will be removed in a future release.
         """
 
+        """
         from warnings import warn
         warn('IPASN._parse_fields_http() has been deprecated and will be '
              'removed. You should now use IPASN.parse_fields_http().')
+        """
         return self.parse_fields_http(*args, **kwargs)
 
     def lookup(self, inc_raw=False, retry_count=3, asn_alts=None,
@@ -469,10 +472,12 @@ class IPASN:
 
             else:
 
+                """
                 from warnings import warn
                 warn('IPASN.lookup() asn_alts argument has been deprecated '
                      'and will be removed. You should now use the asn_methods '
                      'argument.')
+                """
                 lookups = ['dns'] + asn_alts
 
         else:
@@ -710,9 +715,11 @@ class ASNOrigin:
         Deprecated. This will be removed in a future release.
         """
 
+        """
         from warnings import warn
         warn('ASNOrigin._parse_fields() has been deprecated and will be '
              'removed. You should now use ASNOrigin.parse_fields().')
+        """
         return self.parse_fields(*args, **kwargs)
 
     def get_nets_radb(self, response, is_http=False):
@@ -773,9 +780,11 @@ class ASNOrigin:
         Deprecated. This will be removed in a future release.
         """
 
+        """
         from warnings import warn
         warn('ASNOrigin._get_nets_radb() has been deprecated and will be '
              'removed. You should now use ASNOrigin.get_nets_radb().')
+        """
         return self.get_nets_radb(*args, **kwargs)
 
     def lookup(self, asn=None, inc_raw=False, retry_count=3, response=None,
@@ -833,10 +842,12 @@ class ASNOrigin:
 
             else:
 
+                """
                 from warnings import warn
                 warn('ASNOrigin.lookup() asn_alts argument has been deprecated'
                      ' and will be removed. You should now use the asn_methods'
                      ' argument.')
+                """
                 lookups = ['whois'] + asn_alts
 
         else:

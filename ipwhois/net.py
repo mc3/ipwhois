@@ -228,9 +228,11 @@ class Net:
         release (1.0.0).
         """
 
+        """
         from warnings import warn
         warn('Net.lookup_asn() has been deprecated and will be removed. '
              'You should now use asn.IPASN.lookup() for IP ASN lookups.')
+        """
         from .asn import IPASN
         response = None
         ipasn = IPASN(self)
